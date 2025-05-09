@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Data Visualisation Exercise 1"/>
+	<meta name="keywords" content="HTML, CSS"/>
+	<meta name="author" content="Khai Vinh Han - 104222222"/>
+
+	<title>Task 1.1 HTML and CSS Demo Page</title>
+
+	<link rel="stylesheet" href="./styles/styles.css" />
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>
+
+	<h1>Pets and the Pandemic</h1>
+	<h2>Khai Vinh Han</h2>
+
+	<p>A report from Animal Medicines Australia (AMA) has found that many Australians took the opportunity to introduce a pet into their household during the pandemic. Their survey indicated that there was a significant increase in the percent of households taking in a new dog, fish or bird. Their research also indicated that pets had a number of positive influences on their lives such as:</p>
+	
+	<ul>
+		<li>companionship</li>
+		<li>better mental health</li>
+		<li>joy and happiness.</li>
+	</ul>
+
+	<figure>
+		<img src="./img/pet_ownership_in_australia_table.png" alt="random ass table">
+		<figcaption>Fig 1. Comparison of Pet Ownership in 2019 and 2021. Data Source: <a href="https://animalmedicinesaustralia.org.au/report/">Animal Medicines Australia Report</a></figcaption>
+	</figure>
+
+	<p>With the increase in pet ownership the AMA are encouraging policy makers to consider the needs of companion animals and their owners when considering rental, strata and body corporate regulations are well as accepting animals in public places and transport.</p>
+	
+	<figure>
+		<div class="button-group">
+			<button onclick="updateChart('pets2019')" id="button-2019">2019</button>
+			<button onclick="updateChart('pets2021')" id="button-2021">2021</button>
+			<button onclick="updateChart('both')" id="button-both">Both</button>
+		</div>
+
+		<div id="chart"></div>
+		<script src="./scripts/script.js"></script>
+
+		<figcaption>Fig 2. Most Popular Pets owned by Australians in 2019 and 2021</figcaption>
+
+	</figure>
+	
+	<figure>
+		<svg viewBox="0 0 200 200" width="400" height="400">
+			<g fill="none" stroke="teal" stroke-width="0.5" opacity="0.8" transform="translate(100,100) scale(1.2) rotate(30)">
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(0)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(30)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(60)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(90)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(120)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(150)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(180)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(210)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(240)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(270)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(300)"/>
+			<path d="M0,0 Q40,10 70,0 Q40,-10 0,0" transform="rotate(330)"/>
+			</g>
+		</svg>
+
+		<figcaption>Fig 3. Sophisticated SVG Flower</figcaption>
+	</figure>
+
+	<footer>COS30045 Data Visualisation<br>Summer 2025<br>Khai Vinh Han</footer>
+
+</body>
+
+</html>
